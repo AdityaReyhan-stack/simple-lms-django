@@ -26,34 +26,22 @@ simple-lms/
 └── README.md           # Dokumentasi lengkap proyek
 🚀 Cara Menjalankan Proyek
 Ikuti langkah-langkah berikut untuk menjalankan proyek di lingkungan lokal Anda:
-
-Persiapan: Pastikan Docker Desktop sudah aktif di komputer Anda.
-
-Build Image: Bangun image aplikasi dari Dockerfile:
-
-Bash
+1. Persiapan: Pastikan Docker Desktop sudah aktif di komputer Anda.
+2. Build Image: Bangun image aplikasi dari Dockerfile:
 docker-compose build
-Jalankan Service: Jalankan container Django dan PostgreSQL secara background:
-
-Bash
+3. Jalankan Service: Jalankan container Django dan PostgreSQL secara background:
 docker-compose up -d
-Migrasi Database: Sinkronkan skema database Django ke PostgreSQL:
-
-Bash
+4. Migrasi Database: Sinkronkan skema database Django ke PostgreSQL:
 docker-compose exec web python manage.py migrate
-Akses Aplikasi: Buka browser dan akses: http://localhost:8000
+5. Akses Aplikasi: Buka browser dan akses: http://localhost:8000
 
 ⚙️ Environment Variables Configuration
 Proyek ini menggunakan variabel lingkungan untuk keamanan dan fleksibilitas konfigurasi di dalam docker-compose.yml:
 
 DB_NAME: lms_db
-
 DB_USER: lms_user
-
 DB_PASSWORD: lms_password
-
 DB_HOST: db
-
 DB_PORT: 5432
 
 👨‍💻 Penulis
