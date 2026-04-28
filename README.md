@@ -11,13 +11,15 @@ Proyek ini adalah inisialisasi awal untuk sistem Simple LMS menggunakan framewor
 
 ## 📂 Project Structure
 
+```text
 simple-lms/
-├── config/ # Folder konfigurasi utama Django
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
-├── manage.py # Entry point Django
-├── Dockerfile # Instruksi build image Python
-├── docker-compose.yml # Definisi services (Web & DB)
-├── requirements.txt # Daftar library Python
-└── README.md # Dokumentasi proyek
+├── config/             # Folder konfigurasi utama Django
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── manage.py           # Entry point Django
+├── Dockerfile          # Instruksi build image Python
+├── docker-compose.yml  # Definisi services (Web & DB)
+├── requirements.txt    # Daftar library Python
+└── README.md           # Dokumentasi proyek
+```
